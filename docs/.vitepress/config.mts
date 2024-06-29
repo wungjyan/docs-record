@@ -9,19 +9,21 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Java学习', link: '/java/' },
+      { text: 'Typescript', link: '/ts/' },
     ],
 
     sidebar: {
-      '/java/': [
+      '/ts/': [
         {
-          text: 'Java学习',
+          text: 'Typescript',
           items: [
+            { text: '介绍', link: '/ts/' },
+            { text: '原始值类型', link: '/ts/primitive-values-type' },
+            { text: '数组和元组类型', link: '/ts/array-and-tuple' },
             {
-              text: '一些概念',
-              link: '/java/',
+              text: '使用接口描述对象类型',
+              link: '/ts/object-type-and-interface',
             },
-            { text: '第一段 Java 代码', link: '/java/first-java-code' },
           ],
         },
       ],
